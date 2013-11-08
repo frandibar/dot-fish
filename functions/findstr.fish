@@ -1,6 +1,6 @@
 function findstr
-    set files '*'
-    if (count $argv) > 1
+    set files *
+    if test (count $argv) -gt 1
        set files $argv[2..-1]
     end
     grep -EIRn $argv[1] $files \
