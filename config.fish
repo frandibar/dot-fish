@@ -1,2 +1,16 @@
-set -x APPLIANCE 192.168.148.112
-set -x APPLIANCE_LOCAL 10.80.129.173
+# these are added to avoid error message "unknown locale" when running sphinx
+set -xg LC_ALL en_US.UTF-8
+set -xg LANG en_US.UTF-8
+
+# Fish git prompt
+set __fish_git_prompt_showdirtystate 'yes'
+set __fish_git_prompt_showstashstate 'yes'
+set __fish_git_prompt_showupstream 'yes'
+set __fish_git_prompt_color_branch yellow
+
+# Status Chars
+set __fish_git_prompt_char_dirtystate '⚡'
+set __fish_git_prompt_char_stagedstate '→'
+set __fish_git_prompt_char_stashstate '↩'
+set __fish_git_prompt_char_upstream_ahead '↑'
+set __fish_git_prompt_char_upstream_behind '↓'
