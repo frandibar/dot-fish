@@ -23,3 +23,5 @@ set -g __fish_git_prompt_color_invalidstate red
 set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 set -g __fish_git_prompt_color_cleanstate green bold
 
+# virtualfish is a virtualenvwrapper for fish shell
+eval (python -m virtualfish)
